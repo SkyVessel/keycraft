@@ -1,0 +1,11 @@
+{
+  "team_id": "KeyCraft",
+  "agents": [
+    { "id": "ARCH",  "name": "ARCH",  "role": "architect" },
+    { "id": "PIXEL", "name": "PIXEL", "role": "frontend"  },
+    { "id": "FORGE", "name": "FORGE", "role": "backend"   },
+    { "id": "SPARK", "name": "SPARK", "role": "ai"        },
+    { "id": "SCOUT", "name": "SCOUT", "role": "research"  }
+  ],
+  "workspace": "/Users/ty/Desktop/Free workplace/.worktrees/keycraft/keycraft"
+}
