@@ -94,12 +94,6 @@ function GLBMesh({ profile, color, material, textureUrl }: Props) {
 }
 
 export default function KeyCapMesh(props: Props) {
-  return (
-    <Suspense fallback={<FallbackMesh color={props.color} material={props.material} textureUrl={props.textureUrl} />}>
-      <GLBMesh {...props} />
-    </Suspense>
-  )
+  // GLB models are placeholder (0-byte) files — use FallbackMesh until real models are added
+  return <FallbackMesh color={props.color} material={props.material} textureUrl={props.textureUrl} />
 }
-
-// Preload all profiles
-Object.values(MODEL_MAP).forEach(url => useGLTF.preload(url))
